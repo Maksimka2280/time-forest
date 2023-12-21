@@ -1,0 +1,29 @@
+   body{
+    background: url(./img/71f87183f3fbf1f72b1d75c7463c1c3f.jpg) 
+    ;
+ 
+
+   }
+
+    
+    
+
+
+.simple-clock {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    margin-top: 450px;
+    position: absolute;
+    margin-left: 850px;
+    
+}
+
+.hours,
+.minutes,
+.seconds {
+    margin: 0 10px;
+}

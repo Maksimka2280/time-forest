@@ -1,0 +1,60 @@
+body{
+  background-color: #091331;
+}
+
+
+#letter {
+  position: absolute;
+  top: 330px;
+  left: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+ 
+ 
+}
+
+form {
+  position: relative;
+  z-index: 1; /* Поднимаем форму наверх */
+}
+
+#garland {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1; /* Отправляем гирлянду ниже блока формы */
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  border-radius: 10px;
+  border: none;
+}
+

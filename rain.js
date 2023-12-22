@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
             x: Math.random() * canvas.width,  // случайная позиция по горизонтали
             y: Math.random() * canvas.height, // случайная позиция по вертикали
             length: Math.random() * 30 + 5,   // случайная длина
-            speed: Math.random() * 10 + 50     // случайная скорость
+            speed: Math.random() * 5 + 5     // уменьшенная случайная скорость
         };
     }
 
-    // Заполняем массив каплями
-    for (var i = 0; i < 100; i++) {
+    // Заполняем массив каплями (уменьшено количество капель)
+    for (var i = 0; i < 50; i++) {
         drops.push(createDrop());
     }
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ctx.beginPath();
             ctx.moveTo(drop.x, drop.y);
             ctx.lineTo(drop.x, drop.y + drop.length);
-            ctx.strokeStyle = "rgba(0, 0, 255, 0.5)"; // цвет капли (синий)
+            ctx.strokeStyle = "rgba(200, 200, 200, 0.5)"; // цвет капли (серый)
             ctx.stroke();
 
             drop.y += drop.speed;
